@@ -1,0 +1,23 @@
+//count digits
+import java.util.Scanner;
+public class question2
+{
+	public static void main(String args[])
+	{
+		long number,count=0;
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter a number: ");
+		number = s.nextLong();
+		
+		while(number>0)
+		{
+			number = number/10;
+			count++;
+		}
+		System.out.println("Number contain " +count+ " digits.");
+		
+		s.close();
+		
+	}
+}
